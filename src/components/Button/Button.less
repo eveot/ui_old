@@ -1,0 +1,57 @@
+@ev-color--default: #1C1C1C;
+@ev-color--primary: #0460F3;
+@ev-color--secondary: #F3F3F3;
+@ev-color--outline: #F3F3F3;
+@ev-color--white: #FFFFFF;
+@ev-color--black: #000000;
+
+.ev-button {
+  background: none;
+  outline: none;
+  border: none;
+  color: @ev-color--white;
+
+  &-mode {
+    &--default {
+      border-radius: 8.333px;
+      background: var(--element, @ev-color--default);
+    }
+  }
+
+  &-mode {
+    &--primary {
+      border-radius: 8.333px;
+      background: var(--element, @ev-color--primary);
+    }
+  }
+
+  &-mode {
+    &--secondary {
+      border-radius: 8.333px;
+      background: var(--element, @ev-color--secondary);
+      color: @ev-color--black;
+    }
+  }
+
+  &-mode {
+    &--outline {
+      border-radius: 8.333px;
+      border: 1px solid var(--element, @ev-color--outline);
+    }
+  }
+
+  &-size {
+    &--sm {
+      padding: 7.5px 12px;
+    }
+    &--md {
+      padding: 9.5px 12px;
+    }
+    &--lg {
+      padding: 10.5px 12px;
+    }
+    &--xl {
+      padding: 14px 12px;
+    }
+  }
+}
