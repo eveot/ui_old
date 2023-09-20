@@ -18,6 +18,7 @@ export const Default: Story = {
   args: {
     mode: 'default',
     label: 'Button',
+    size: 'sm'
   },
 };
 
@@ -25,19 +26,6 @@ export const Primary: Story = {
   args: {
     mode: 'primary',
     label: 'Button',
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    mode: 'secondary',
-    label: 'Button',
-  },
-};
-
-export const Outline: Story = {
-  args: {
-    mode: 'outline',
-    label: 'Button',
+    size: 'md'
   },
 };

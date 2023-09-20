@@ -1,11 +1,4 @@
-@ev-color--default: #1C1C1C;
-@ev-color--default-active: #000000;
-@ev-color--primary: #0460f3;
-@ev-color--primary-active: #0153e0;
-@ev-color--secondary: #F3F3F3;
-@ev-color--outline: #F3F3F3;
-@ev-color--white: #FFFFFF;
-@ev-color--black: #000000;
+@import "../../assets/styles/app";
 
 .ev-button {
   background: none;
@@ -13,80 +6,44 @@
   border: none;
   color: @ev-color--white;
   transition: .3s;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
 
   &-mode {
     &--default {
-      border-radius: 8.333px;
       background: var(--element, @ev-color--default);
 
       &:hover {
-        background: var(--element, @ev-color--primary);
-      }
-
-      &:active {
-        background: var(--element, @ev-color--primary-active);
+        background: var(--element, @ev-color--default-hover);
       }
     }
-  }
-
-  &-mode {
     &--primary {
-      border-radius: 8.333px;
       background: var(--element, @ev-color--primary);
 
       &:hover {
-        background: var(--element, @ev-color--default);
-      }
-
-      &:active {
-        background: var(--element, @ev-color--default-active);
+        background: var(--element, @ev-color--primary-hover);
       }
     }
   }
 
-  &-mode {
-    &--secondary {
-      border-radius: 8.333px;
-      background: var(--element, @ev-color--secondary);
-      color: @ev-color--black;
-
-      &:hover {
-        opacity: .5;
-      }
-
-      &:active {
-        opacity: .7;
-      }
+  &-disabled {
+    &--default {
+      pointer-events: none;
+      background: var(--element, @ev-color--default-disabled);
     }
-  }
-
-  &-mode {
-    &--outline {
-      border-radius: 8.333px;
-      border: 1px solid var(--element, @ev-color--outline);
-
-      &:hover {
-        opacity: .5;
-      }
-
-      &:active {
-        opacity: .7;
-      }
+    &--primary {
+      pointer-events: none;
+      background: var(--element, @ev-color--primary-disabled);
     }
   }
 
   &-size {
     &--sm {
-      padding: 7.5px 12px;
+      padding: 11.5px 15px;
     }
     &--md {
-      padding: 9.5px 12px;
-    }
-    &--lg {
-      padding: 10.5px 12px;
-    }
-    &--xl {
-      padding: 14px 12px;
+      padding: 15px;
     }
   }
 }
