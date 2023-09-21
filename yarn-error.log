@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\prost\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add rsuite
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\prost\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\prost\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\prost\AppData\Local\Programs\Python\Python310\;C:\Users\prost\AppData\Local\Microsoft\WindowsApps;C:\Users\prost\AppData\Local\GitHubDesktop\bin;C:\Users\prost\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\prost\AppData\Roaming\npm;C:\Users\prost\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\OpenSSL-Win64\bin;C:\Users\prost\.dotnet\tools;C:\Users\prost\AppData\Local\JetBrains\Toolbox\scripts;C:\Program Files\PostgreSQL\15\bin;C:\Program Files\PostgreSQL\15\data;;C:\Users\prost\Documents\GitHub\ui\node_modules\.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\prost\Documents\GitHub\ui\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "eveon-ui",
+    "version": "1.0.0",
+    "description": "UI-Components library for Eveon Team",
+    "scripts": {
+      "rollup": "rollup -c",
+      "storybook": "storybook dev -p 6006",
+      "build-storybook": "storybook build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/eveot/ui.git"
+    },
+    "author": "Intarial IT",
+    "license": "ISC",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+      "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "bugs": {
+      "url": "https://github.com/eveot/ui/issues"
+    },
+    "homepage": "https://github.com/eveot/ui#readme",
+    "devDependencies": {
+      "@babel/preset-env": "^7.22.14",
+      "@babel/preset-react": "^7.22.5",
+      "@babel/preset-typescript": "^7.22.11",
+      "@rollup/plugin-commonjs": "^25.0.4",
+      "@rollup/plugin-node-resolve": "^15.2.1",
+      "@rollup/plugin-typescript": "^11.1.3",
+      "@storybook/addon-essentials": "^7.4.0",
+      "@storybook/addon-interactions": "^7.4.0",
+      "@storybook/addon-links": "^7.4.0",
+      "@storybook/addon-onboarding": "^1.0.8",
+      "@storybook/blocks": "^7.4.0",
+      "@storybook/react": "^7.4.0",
+      "@storybook/react-webpack5": "^7.4.0",
+      "@storybook/testing-library": "^0.2.0",
+      "@types/react": "^18.2.21",
+      "concurrently": "^8.2.1",
+      "less": "^4.2.0",
+      "less-watch-compiler": "^1.16.3",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "rollup": "^3.28.1",
+      "rollup-plugin-dts": "^6.0.1",
+      "storybook": "^7.4.0",
+      "typescript": "^5.2.2"
+    },
+    "dependencies": {
+      "less-loader": "^11.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
