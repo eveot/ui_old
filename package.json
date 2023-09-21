@@ -1,7 +1,7 @@
 {
-  "name": "eveon-ui",
+  "name": "@eveot/ui",
   "version": "1.0.0",
-  "description": "UI-Components library for Eveon Team",
+  "description": "Eveot UI - Components library for Eveot Projects",
   "scripts": {
     "rollup": "rollup -c",
     "storybook": "storybook dev -p 6006",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/eveot/ui.git"
   },
-  "author": "Intarial IT",
+  "author": "Eveot Developers <developers@eveot.com>",
   "license": "ISC",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
