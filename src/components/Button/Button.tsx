@@ -4,14 +4,16 @@ import  './Button.less'
 export interface ButtonProps {
   label: string;
   onClick: () => void,
-  mode?: 'default' | 'primary' | 'secondary' | 'outline'
-  size?: 'sm' | 'md' | 'lg' | 'xl'
+  disabled?: boolean,
+  mode?: 'default' | 'primary'
+  size?: 'sm' | 'md'
 }
 
 const Button = (
   {
     mode = 'default',
     size = 'md',
+    disabled = false,
     onClick,
     label,
     ...props
@@ -24,7 +26,8 @@ const Button = (
         [
           "ev-button",
           `ev-button-mode--${ mode }`,
-          `ev-button-size--${ size }`
+          `ev-button-size--${ size }`,
+          disabled && `ev-button-disabled--${ mode }`
         ].join(' ')
       }
     >
