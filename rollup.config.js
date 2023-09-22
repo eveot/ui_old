@@ -5,6 +5,7 @@ import typescript from 'rollup-plugin-typescript2';
 import alias from 'rollup-plugin-alias';
 import serve from 'rollup-plugin-serve';
 import less from 'rollup-plugin-less';
+import css from 'rollup-plugin-css-only';
 
 export default {
     input: 'src/index.ts',
@@ -23,8 +24,9 @@ export default {
         less({
             insert: true,
         }),
+        css({ output: 'bundle.css' }),
         babel({
-            extensions: ['.tsx'],
+            extensions: ['.tsx', '.less'],
             exclude: 'node_modules/**',
         }),
         serve({

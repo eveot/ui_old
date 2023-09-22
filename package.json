@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Eveot UI - Components library for Eveot Projects",
   "scripts": {
-    "rollup": "rollup -c -w",
+    "rollup": "rollup -c",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "webpack --mode production"
