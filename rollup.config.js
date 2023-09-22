@@ -2,7 +2,6 @@ import babel from 'rollup-plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
-import alias from 'rollup-plugin-alias';
 import serve from 'rollup-plugin-serve';
 import less from 'rollup-plugin-less';
 import css from 'rollup-plugin-css-only';
@@ -14,8 +13,6 @@ export default {
         format: 'iife',
     },
     plugins: [
-        alias({
-        }),
         resolve(),
         commonjs(),
         typescript({
