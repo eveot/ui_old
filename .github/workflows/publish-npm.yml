@@ -30,7 +30,10 @@ jobs:
       - name: Check npmrc file
         run: cat ~/.npmrc
 
+      - name: Bump version (optional)
+        run: npm version patch
+
       - name: Publish to npm
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
