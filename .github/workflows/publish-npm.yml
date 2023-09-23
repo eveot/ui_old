@@ -30,10 +30,15 @@ jobs:
       - name: Check npmrc file
         run: cat ~/.npmrc
 
+      - name: Configure Git user
+        run: |
+          git config --global user.email "support@intarial.com"
+          git config --global user.name "IntarialN"
+
       - name: Bump version (optional)
-        run: npm version patch
+        run: npm version patch # Или другую команду увеличения версии (major, minor, patch)
 
       - name: Publish to npm
-        run: npm publish --access public
+        run: npm publish --access public # Используйте опцию --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
